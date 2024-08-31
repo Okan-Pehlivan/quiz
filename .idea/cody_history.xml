@@ -152,9 +152,33 @@
                       <speaker value="ASSISTANT" />
                       <text value="Bu hata mesajının Türkçe çevirisi şöyledir:&#10;&#10;&quot;git@github.com: İzin reddedildi (genel anahtar). Uzak depodan okunamadı. Lütfen doğru erişim haklarına sahip olduğunuzdan ve deponun var olduğundan emin olun.&quot;&#10;&#10;Bu mesaj, GitHub'a erişim için gerekli olan SSH anahtarı ile ilgili bir sorun olduğunu gösteriyor. Sorunu çözmek için SSH anahtarınızı kontrol etmeniz ve GitHub hesabınızla doğru şekilde ilişkilendirildiğinden emin olmanız gerekiyor." />
                     </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="git@github.com: Permission denied (publickey). Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. bu sorunu nasıl çözerim" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu sorunu çözmek için aşağıdaki adımları izleyebilirsiniz:&#10;&#10;1. SSH anahtarınızı kontrol edin:&#10;   ```&#10;   ssh-add -l&#10;   ```&#10;   Eğer anahtar listelenmiyorsa, anahtarınızı ekleyin:&#10;   ```&#10;   ssh-add ~/.ssh/id_rsa&#10;   ```&#10;&#10;2. GitHub'a yeni bir SSH anahtarı ekleyin:&#10;   - SSH anahtarı oluşturun:&#10;     ```&#10;     ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;&#10;     ```&#10;   - Anahtarı kopyalayın:&#10;     ```&#10;     cat ~/.ssh/id_rsa.pub&#10;     ```&#10;   - GitHub hesap ayarlarınıza gidin ve &quot;SSH and GPG keys&quot; bölümünde yeni anahtar ekleyin.&#10;&#10;3. GitHub hesabınızla bağlantıyı test edin:&#10;   ```&#10;   ssh -T git@github.com&#10;   ```&#10;&#10;4. Depo URL'sini kontrol edin:&#10;   ```&#10;   git remote -v&#10;   ```&#10;   Eğer HTTPS kullanıyorsanız, SSH'a geçin:&#10;   ```&#10;   git remote set-url origin git@github.com:username/repository.git&#10;   ```&#10;&#10;5. GitHub hesabınızın depo için gerekli izinlere sahip olduğundan emin olun.&#10;&#10;Bu adımları takip ederek sorunu çözebilir ve GitHub ile sorunsuz bir şekilde çalışabilirsiniz." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="1. adımı nasıl yhapıcam" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="SSH anahtarınızı kontrol etmek için terminal veya komut istemcisini açın ve şu komutu girin:&#10;&#10;```&#10;ssh-add -l&#10;```&#10;&#10;Bu komut, sisteminizde yüklü olan SSH anahtarlarını listeleyecektir. Eğer herhangi bir anahtar listelenmezse veya istediğiniz anahtar görünmüyorsa, anahtarınızı eklemek için şu komutu kullanabilirsiniz:&#10;&#10;```&#10;ssh-add ~/.ssh/id_rsa&#10;```&#10;&#10;Bu komut, varsayılan konumdaki SSH anahtarınızı ekler. Eğer anahtarınız farklı bir konumda veya farklı bir isimle kaydedilmişse, komutu buna göre değiştirmeniz gerekecektir.&#10;&#10;Bu adımları tamamladıktan sonra, SSH anahtarınız sisteme yüklenmiş olacak ve GitHub ile iletişim kurarken kullanılabilir hale gelecektir." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Error connecting to agent: No such file or directory bu hatayı veriyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu hata genellikle SSH ajanının çalışmadığını veya erişilemediğini gösterir. Sorunu çözmek için şu adımları deneyebilirsiniz:&#10;&#10;1. SSH ajanını başlatın:&#10;   ```&#10;   eval &quot;$(ssh-agent -s)&quot;&#10;   ```&#10;&#10;2. SSH ajanının çalıştığını doğrulayın:&#10;   ```&#10;   echo $SSH_AGENT_PID&#10;   ```&#10;&#10;3. Anahtarınızı manuel olarak ekleyin:&#10;   ```&#10;   ssh-add ~/.ssh/id_rsa&#10;   ```&#10;&#10;4. Sisteminizi yeniden başlatın ve SSH ajanının otomatik olarak başlatılıp başlatılmadığını kontrol edin.&#10;&#10;5. SSH yapılandırma dosyanızı kontrol edin ve gerekirse düzenleyin:&#10;   ```&#10;   nano ~/.ssh/config&#10;   ```&#10;&#10;Bu adımlar, SSH ajanı ile ilgili sorunu çözmenize ve GitHub'a bağlanmanıza yardımcı olacaktır." />
+                    </message>
                   </list>
                 </messages>
-                <updatedAt value="2024-08-31T13:58:57.8521044" />
+                <updatedAt value="2024-08-31T14:12:29.474867" />
               </chat>
             </list>
           </chats>
