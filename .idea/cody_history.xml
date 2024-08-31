@@ -136,9 +136,17 @@
                       <speaker value="ASSISTANT" />
                       <text value="Tabii ki! İşte README dosyanızın görüntü olarak sayfanıza ekleyebileceğiniz şekilde formatlanmış hali:&#10;&#10;```markdown&#10;# Quiz Application&#10;&#10;An interactive quiz application built with React.&#10;&#10;## Project Description&#10;This project is a versatile quiz tool that allows users to test their knowledge across various categories. It's designed to provide an engaging and educational experience for users of all levels.&#10;&#10;## Features&#10;- Dynamic question fetching from an external API&#10;- Multiple choice questions&#10;- Customizable quiz length (5 or 10 questions)&#10;- Various quiz categories&#10;- Interactive answer selection&#10;- Immediate feedback on answers&#10;- Results summary at the end of the quiz&#10;&#10;## Technologies Used&#10;- React&#10;- JavaScript (ES6+)&#10;- HTML5&#10;- CSS3&#10;&#10;## Getting Started&#10;To run this project locally:&#10;&#10;1. Clone the repository&#10;   ```&#10;   git clone https://github.com/Okan-Pehlivan/quiz-application.git&#10;   ```&#10;&#10;2. Navigate to the project directory&#10;   ```&#10;   cd quiz-application&#10;   ```&#10;&#10;3. Install dependencies&#10;   ```&#10;   npm install&#10;   ```&#10;&#10;4. Start the development server&#10;   ```&#10;   npm start&#10;   ```&#10;&#10;5. Open http://localhost:3000 to view it in your browser&#10;&#10;## How to Use&#10;1. Select a quiz category and the number of questions&#10;2. Click &quot;Start Quiz&quot; to begin&#10;3. Read each question carefully and select your answer&#10;4. Click &quot;Next&quot; to move to the next question&#10;5. After answering all questions, click &quot;Get Results&quot; to see your score&#10;6. Use &quot;New Quiz&quot; to start over with new questions&#10;&#10;Thanks for checking out my Quiz Application project!&#10;```&#10;&#10;Bu formatı doğrudan bir Markdown dosyasına (.md uzantılı) kaydedebilir veya GitHub gibi platformlarda kullanabilirsiniz. Bu şekilde, projenizin README sayfası düzenli ve profesyonel görünecektir." />
                     </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Successfully created project 'quiz' on GitHub, but initial push failed: Warning: Permanently added 'github.com' (ED25519) to the list of known hosts. git@github.com: Permission denied (publickey). Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. çevirirmisin" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu hata mesajını Türkçe'ye çeviriyorum:&#10;&#10;&quot;'quiz' projesi GitHub'da başarıyla oluşturuldu, ancak ilk push işlemi başarısız oldu: Uyarı: 'github.com' (ED25519) kalıcı olarak bilinen hostlar listesine eklendi. git@github.com: İzin reddedildi (genel anahtar). Uzak depodan okunamadı. Lütfen doğru erişim haklarına sahip olduğunuzdan ve deponun var olduğundan emin olun.&quot;&#10;&#10;Bu hata genellikle GitHub hesabınıza bağlı bir SSH anahtarının eksik veya yanlış yapılandırılmış olmasından kaynaklanır. Sorunu çözmek için GitHub hesabınıza geçerli bir SSH anahtarı eklemeniz veya mevcut anahtarınızı güncellemeniz gerekebilir." />
+                    </message>
                   </list>
                 </messages>
-                <updatedAt value="2024-08-31T13:42:40.3778882" />
+                <updatedAt value="2024-08-31T13:55:49.9985957" />
               </chat>
             </list>
           </chats>
