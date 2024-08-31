@@ -144,9 +144,17 @@
                       <speaker value="ASSISTANT" />
                       <text value="Bu hata mesajını Türkçe'ye çeviriyorum:&#10;&#10;&quot;'quiz' projesi GitHub'da başarıyla oluşturuldu, ancak ilk push işlemi başarısız oldu: Uyarı: 'github.com' (ED25519) kalıcı olarak bilinen hostlar listesine eklendi. git@github.com: İzin reddedildi (genel anahtar). Uzak depodan okunamadı. Lütfen doğru erişim haklarına sahip olduğunuzdan ve deponun var olduğundan emin olun.&quot;&#10;&#10;Bu hata genellikle GitHub hesabınıza bağlı bir SSH anahtarının eksik veya yanlış yapılandırılmış olmasından kaynaklanır. Sorunu çözmek için GitHub hesabınıza geçerli bir SSH anahtarı eklemeniz veya mevcut anahtarınızı güncellemeniz gerekebilir." />
                     </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="git@github.com: Permission denied (publickey). Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. çevir" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu hata mesajının Türkçe çevirisi şöyledir:&#10;&#10;&quot;git@github.com: İzin reddedildi (genel anahtar). Uzak depodan okunamadı. Lütfen doğru erişim haklarına sahip olduğunuzdan ve deponun var olduğundan emin olun.&quot;&#10;&#10;Bu mesaj, GitHub'a erişim için gerekli olan SSH anahtarı ile ilgili bir sorun olduğunu gösteriyor. Sorunu çözmek için SSH anahtarınızı kontrol etmeniz ve GitHub hesabınızla doğru şekilde ilişkilendirildiğinden emin olmanız gerekiyor." />
+                    </message>
                   </list>
                 </messages>
-                <updatedAt value="2024-08-31T13:55:49.9985957" />
+                <updatedAt value="2024-08-31T13:58:57.8521044" />
               </chat>
             </list>
           </chats>
