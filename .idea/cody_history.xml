@@ -180,6 +180,115 @@
                 </messages>
                 <updatedAt value="2024-08-31T14:12:29.474867" />
               </chat>
+              <chat>
+                <internalId value="05c7af1b-e428-4812-a469-53790b1eb176" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="fee50cb3-fb34-45ef-84e7-c1a844335a59" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="git@github.com: Permission denied (publickey). Could not read from remote repository. Please make sure you have the correct access rights and the repository exists." />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="This error message typically occurs when you're trying to interact with a GitHub repository using SSH, but GitHub is unable to authenticate you. Here are some steps to troubleshoot and resolve this issue:&#10;&#10;1. Ensure you have an SSH key pair:&#10;   - Check if you have existing SSH keys: `ls -al ~/.ssh`&#10;   - If you don't have any, create a new SSH key pair: `ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;`&#10;&#10;2. Add your SSH key to the ssh-agent:&#10;   - Start the ssh-agent: `eval &quot;$(ssh-agent -s)&quot;`&#10;   - Add your SSH private key to the agent: `ssh-add ~/.ssh/id_ed25519` (or the path to your private key)&#10;&#10;3. Add your public SSH key to your GitHub account:&#10;   - Copy your public key: `cat ~/.ssh/id_ed25519.pub | pbcopy` (on macOS) or `cat ~/.ssh/id_ed25519.pub` and manually copy&#10;   - Go to GitHub Settings &gt; SSH and GPG keys &gt; New SSH key&#10;   - Paste your public key and save&#10;&#10;4. Verify your SSH connection:&#10;   - Test your connection: `ssh -T git@github.com`&#10;   - You should see a message like &quot;Hi username! You've successfully authenticated...&quot;&#10;&#10;5. Ensure you're using the correct repository URL:&#10;   - Use the SSH URL format: `git@github.com:username/repository.git`&#10;   - Update your remote if necessary: `git remote set-url origin git@github.com:username/repository.git`&#10;&#10;6. Check your repository permissions:&#10;   - Ensure you have the necessary permissions to access the repository on GitHub&#10;&#10;7. Verify your Git configuration:&#10;   - Check your Git username and email: `git config user.name` and `git config user.email`&#10;   - Make sure they match your GitHub account&#10;&#10;If you've gone through these steps and are still experiencing issues, you may want to:&#10;&#10;- Check your SSH key passphrase if you set one&#10;- Regenerate your SSH keys and add them to GitHub again&#10;- Contact GitHub support if the problem persists&#10;&#10;Let me know if you need any clarification on these steps or if you're still having trouble after trying them." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="sorunu nasıl çözerim" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Sorunu çözmek için aşağıdaki adımları Türkçe olarak açıklayacağım:&#10;&#10;1. SSH anahtarınızın olup olmadığını kontrol edin:&#10;   - Terminal'de şu komutu çalıştırın: `ls -al ~/.ssh`&#10;   - Eğer anahtar yoksa, yeni bir tane oluşturun: `ssh-keygen -t ed25519 -C &quot;emailiniz@ornek.com&quot;`&#10;&#10;2. SSH anahtarınızı ssh-agent'a ekleyin:&#10;   - ssh-agent'ı başlatın: `eval &quot;$(ssh-agent -s)&quot;`&#10;   - Özel anahtarınızı ekleyin: `ssh-add ~/.ssh/id_ed25519`&#10;&#10;3. Genel SSH anahtarınızı GitHub hesabınıza ekleyin:&#10;   - Genel anahtarınızı kopyalayın: `cat ~/.ssh/id_ed25519.pub`&#10;   - GitHub'da Ayarlar &gt; SSH ve GPG anahtarları &gt; Yeni SSH anahtarı'na gidin&#10;   - Genel anahtarınızı yapıştırın ve kaydedin&#10;&#10;4. SSH bağlantınızı doğrulayın:&#10;   - Şu komutu çalıştırın: `ssh -T git@github.com`&#10;   - &quot;Hi kullanıcıadınız! You've successfully authenticated...&quot; gibi bir mesaj görmelisiniz&#10;&#10;5. Doğru repository URL'sini kullandığınızdan emin olun:&#10;   - SSH URL formatını kullanın: `git@github.com:kullaniciadi/repository.git`&#10;   - Gerekirse uzak bağlantıyı güncelleyin: `git remote set-url origin git@github.com:kullaniciadi/repository.git`&#10;&#10;6. Repository izinlerinizi kontrol edin:&#10;   - GitHub'da repository'ye erişim izniniz olduğundan emin olun&#10;&#10;7. Git yapılandırmanızı kontrol edin:&#10;   - Git kullanıcı adı ve e-postanızı kontrol edin: `git config user.name` ve `git config user.email`&#10;   - Bunların GitHub hesabınızla eşleştiğinden emin olun&#10;&#10;Bu adımları takip ettikten sonra sorun hala devam ediyorsa, SSH anahtarlarınızı yeniden oluşturmayı ve GitHub'a tekrar eklemeyi deneyebilirsiniz. Sorun çözülmezse, GitHub desteğiyle iletişime geçmeniz gerekebilir." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="ne diyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Özür dilerim, anlaşılmadığını fark ettim. İlk mesajınız İngilizce olduğu için cevabı İngilizce vermiştim, ancak sonraki sorunuz Türkçeydi. Şimdi hatamı düzelteyim ve sorununuzu Türkçe açıklayayım:&#10;&#10;Gördüğünüz hata mesajı şunu söylüyor:&#10;&#10;&quot;git@github.com: İzin reddedildi (genel anahtar). Uzak depodan okunamadı. Lütfen doğru erişim haklarına sahip olduğunuzdan ve deponun var olduğundan emin olun.&quot;&#10;&#10;Bu hata genellikle şu durumlarda ortaya çıkar:&#10;&#10;1. GitHub hesabınıza bağlı bir SSH anahtarınız yok.&#10;2. SSH anahtarınız doğru şekilde yapılandırılmamış.&#10;3. GitHub'daki depo için gerekli izinlere sahip değilsiniz.&#10;&#10;Bu sorunu çözmek için, SSH anahtarınızı kontrol etmeniz, GitHub hesabınıza eklemeniz ve bağlantınızı test etmeniz gerekiyor. Önceki mesajımda bu adımları detaylı olarak açıklamıştım.&#10;&#10;Eğer bu adımları nasıl uygulayacağınız konusunda daha fazla yardıma ihtiyacınız varsa, lütfen sorun. Size adım adım Türkçe olarak yardımcı olmaktan memnuniyet duyarım." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Generating public/private ed25519 key pair.&#10;Enter file in which to save the key (C:\Users\okan_/.ssh/id_ed25519):  ne diyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu mesaj, yeni bir SSH anahtar çifti oluşturma işleminin başladığını gösteriyor. Size şunu soruyor:&#10;&#10;&quot;Anahtarı kaydetmek istediğiniz dosyanın yolunu girin (C:\Users\okan_/.ssh/id_ed25519):&quot;&#10;&#10;Burada yapmanız gerekenler:&#10;&#10;1. Eğer önerilen konumu (C:\Users\okan_/.ssh/id_ed25519) kullanmak istiyorsanız, sadece Enter tuşuna basın. Bu, anahtarlarınızı varsayılan konuma kaydedecektir.&#10;&#10;2. Eğer anahtarlarınızı farklı bir konuma kaydetmek istiyorsanız, istediğiniz tam dosya yolunu yazın ve Enter tuşuna basın.&#10;&#10;Genellikle, önerilen varsayılan konumu kullanmak en iyisidir. Bu, diğer programların ve Git'in anahtarlarınızı otomatik olarak bulmasını sağlar.&#10;&#10;Bu adımdan sonra, sistem sizden bir parola (passphrase) girmenizi isteyebilir. Bu isteğe bağlıdır, ama güvenlik için önerilir. Parolayı girdikten (veya boş bıraktıktan) sonra, SSH anahtar çiftiniz oluşturulacak ve belirttiğiniz konuma kaydedilecektir." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Enter passphrase (empty for no passphrase):  ne diyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu mesaj şunu soruyor:&#10;&#10;&quot;Parola girin (parola olmaması için boş bırakın):&quot;&#10;&#10;Burada sizden SSH anahtarınız için bir parola (passphrase) girmeniz isteniyor. İşte seçenekleriniz:&#10;&#10;1. Parola kullanmak: Güvenlik açısından önerilir. Anahtarınızı kullanmak istediğinizde bu parolayı girmeniz gerekecek.&#10;&#10;2. Parola kullanmamak: Sadece Enter tuşuna basarak boş bırakabilirsiniz. Bu, anahtarınızı kullanırken parola girmek zorunda kalmayacağınız anlamına gelir, ancak daha az güvenlidir.&#10;&#10;Parola kullanmanın avantajları:&#10;- Daha güvenli: Birisi özel anahtarınıza erişse bile, parolayı bilmeden kullanamazlar.&#10;- Ek bir güvenlik katmanı sağlar.&#10;&#10;Parola kullanmamanın avantajları:&#10;- Kullanımı daha kolay: Her seferinde parola girmeniz gerekmez.&#10;- Otomatik işlemler için daha uygundur.&#10;&#10;Eğer parola kullanmaya karar verirseniz, unutmayacağınız güçlü bir parola seçin. Parola girdikten sonra, sistem sizden parolayı tekrar girmenizi isteyecektir.&#10;&#10;Hangi seçeneği tercih ederseniz edin, seçiminizi yaptıktan sonra Enter tuşuna basın ve işleme devam edin." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Passphrases do not match.  Try again.&#10;Enter passphrase (empty for no passphrase) ne diyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu mesaj şunu söylüyor:&#10;&#10;&quot;Parolalar eşleşmiyor. Tekrar deneyin.&#10;Parola girin (parola olmaması için boş bırakın):&quot;&#10;&#10;Bu durumda şunlar olmuş:&#10;&#10;1. İlk olarak bir parola girdiniz.&#10;2. Sistem, parolayı doğrulamak için tekrar girmenizi istedi.&#10;3. İkinci girdiğiniz parola, ilkiyle eşleşmedi.&#10;&#10;Şimdi sistem, size tekrar parola girme şansı veriyor. Yapmanız gerekenler:&#10;&#10;1. Eğer parola kullanmak istiyorsanız:&#10;   - Yeni bir parola girin.&#10;   - Enter'a basın.&#10;   - Aynı parolayı tekrar girin (doğrulama için).&#10;   - Enter'a basın.&#10;&#10;2. Eğer parola kullanmak istemiyorsanız:&#10;   - Sadece Enter tuşuna basın (hiçbir şey yazmadan).&#10;   - Tekrar Enter tuşuna basın (doğrulama için).&#10;&#10;Parola kullanmak istiyorsanız, unutmayacağınız ve kolayca yazabileceğiniz bir parola seçin. Parolanın her iki girişte de aynı olduğundan emin olun.&#10;&#10;Eğer parola kullanmamaya karar verirseniz, sadece iki kez Enter tuşuna basmanız yeterli olacaktır." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Your identification has been saved in C:\Users\okan_/.ssh/id_ed25519.&#10;Your public key has been saved in C:\Users\okan_/.ssh/id_ed25519.pub.&#10;The key fingerprint is:&#10;SHA256:Aln0KlOnBu8Gu9oZ/vcj9aacgHRo91Kk5vH46bKA8w8 okan.windking@gmail.com&#10;The key's randomart image is:&#10;+--[ED25519 256]--+&#10;|     .o          |&#10;|     o .         |&#10;|    + . o .      |&#10;|     = = o       |&#10;|    + X S .      |&#10;|     @ B *.      |&#10;|    = E =.o.     |&#10;|   o B o+=.oo    |&#10;|  ..=.ooo*O+     |&#10;+----[SHA256]-----+ ne diyor" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Bu mesaj, SSH anahtar çiftinizin başarıyla oluşturulduğunu ve kaydedildiğini gösteriyor. İşte mesajın açıklaması:&#10;&#10;1. &quot;Your identification has been saved in C:\Users\okan_/.ssh/id_ed25519.&quot;&#10;   - Özel anahtarınız bu dosyaya kaydedildi.&#10;&#10;2. &quot;Your public key has been saved in C:\Users\okan_/.ssh/id_ed25519.pub.&quot;&#10;   - Genel anahtarınız bu dosyaya kaydedildi.&#10;&#10;3. &quot;The key fingerprint is: SHA256:Aln0KlOnBu8Gu9oZ/vcj9aacgHRo91Kk5vH46bKA8w8 okan.windking@gmail.com&quot;&#10;   - Bu, anahtarınızın benzersiz parmak izidir.&#10;&#10;4. &quot;The key's randomart image is: [görsel]&quot;&#10;   - Bu, anahtarınızın görsel bir temsilidir. Anahtarları hızlıca karşılaştırmak için kullanılabilir.&#10;&#10;Şimdi yapmanız gerekenler:&#10;&#10;1. Genel anahtarınızı GitHub'a ekleyin:&#10;   - &quot;C:\Users\okan_/.ssh/id_ed25519.pub&quot; dosyasının içeriğini kopyalayın.&#10;   - GitHub'da &quot;Settings&quot; &gt; &quot;SSH and GPG keys&quot; &gt; &quot;New SSH key&quot; bölümüne gidin.&#10;   - Kopyaladığınız genel anahtarı buraya yapıştırın ve kaydedin.&#10;&#10;2. SSH bağlantınızı test edin:&#10;   - Komut istemcisinde şu komutu çalıştırın: `ssh -T git@github.com`&#10;   - GitHub'ın sizi tanıyıp tanımadığını göreceksiniz.&#10;&#10;Bu adımları tamamladıktan sonra, GitHub ile SSH üzerinden güvenli bir şekilde iletişim kurabileceksiniz." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-08-31T14:27:37.4289606" />
+              </chat>
             </list>
           </chats>
           <defaultLlm>
