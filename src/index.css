@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  padding: 1rem 5rem;
+  background-color: #89CFF0;
+  border-radius: 10px;
+  color: black;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.Quiz {
+  padding-bottom: 1rem;
+}
+
+.Button {
+  border: 1px solid;
+  border-color: aliceblue;
+  border-radius: 10px;
+  height: 2rem;
+  width: 10rem;
+  background-color: #89CFF0;
+  margin-top: 5px;
+}
+
+.Button:hover {
+  background-color: aliceblue;
+}
+
+.Choice {
+  border: 1px solid;
+  border-color: #89CFF0;
+  border-radius: 10px;
+  height: 2rem;
+  background-color: aliceblue;
+  padding: 0 1rem;
+}
+
+select {
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  width: 10rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: black;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid aliceblue;
+}
